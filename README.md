@@ -2,8 +2,9 @@
 
 ## Set up
 
-Install dependencies with `npm install`
-start a dev server with `npm run dev`
+- Install dependencies with `npm install`
+- start a dev server with `npm run dev`
+- Run tests with `npm run test`
 
 
 ## Acceptance Criteria 
