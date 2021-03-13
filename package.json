@@ -7,6 +7,7 @@
     "start": "node ./src/server/index.js -p $PORT",
     "dev": "nodemon ./src/server/index.js",
     "test": "jest",
+    "db": "json-server --watch db.json",
     "watch": "webpack --watch",
     "build": "webpack"
   },
