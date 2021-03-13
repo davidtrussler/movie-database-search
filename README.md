@@ -1,5 +1,11 @@
 # Movie Database Search
 
+## Set up
+
+Install dependencies with `npm install`
+start a dev server with `npm run dev`
+
+
 ## Acceptance Criteria 
 
 ### **MovieSearch-01**
