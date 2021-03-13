@@ -15,6 +15,7 @@ module.exports = function createSSRApp(url) {
 			<html lang="en-GB">
 				<head>
 					<title>Movie Database Search</title>
+					<script type="text/javascript" src="main.js"></script>
 				</head>
 
 				<body>

@@ -3,8 +3,9 @@
 ## Set up
 
 - Install dependencies with `npm install`
-- start a dev server with `npm run dev`
+- Start a dev server with `npm run dev`
 - Run tests with `npm run test`
+- Run `npm run watch` during development to bundle files on change
 
 
 ## Acceptance Criteria 

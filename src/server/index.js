@@ -4,6 +4,8 @@ const express = require('express');
 const server = express(); 
 const port = process.env.PORT || 4000; 
 
+server.use(express.static('public')); 
+
 server.get('*', (req, res) => {
 	const app = createSSRApp(req.url);
 
