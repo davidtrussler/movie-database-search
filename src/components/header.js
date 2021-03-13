@@ -1,7 +1,11 @@
 const AppHeader = {
 	template: `
 		<header>
-			<p>This is the common header of the site</p>
+			<h1>MMTFlix</h1>
+			<form>
+				<input type="text" placeholder="Search here ..."/>
+				<button type="submit">Search</button>
+			</form>
 		</header>
 	`	
 }
