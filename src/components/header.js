@@ -3,8 +3,8 @@ const AppHeader = {
 		<header>
 			<h1>MMTFlix</h1>
 			<form>
-				<input type="text" placeholder="Search here ..."/>
-				<button type="submit">Search</button>
+				<input name="search" type="text" placeholder="Search here ..."/>
+				<button type="submit" name="submit">Search</button>
 			</form>
 		</header>
 	`	

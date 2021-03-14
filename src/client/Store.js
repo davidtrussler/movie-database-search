@@ -12,6 +12,10 @@ class Store {
 				this.state.films = data; 
 			});
   }
+
+  search(value) {
+  	console.log('value: ', value); 
+  }
 }
 
 module.exports = Store;
