@@ -6,7 +6,11 @@ class Store {
 	}
 
   getFilms() {
-  	console.log('getFilms!'); 
+		fetch('http://localhost:3000/films')
+			.then(response => response.json())
+			.then((data) => {
+				this.state.films = data; 
+			});
   }
 }
 
