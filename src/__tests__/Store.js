@@ -1,7 +1,7 @@
 const Store = require('../client/Store');
 const mockData = require('../../db.json');
 
-describe('empty test', () => {
+describe('search', () => {
 	let sut;
 
 	beforeEach(() => {
@@ -10,11 +10,18 @@ describe('empty test', () => {
 		sut.state.films = mockData.films;
 	}); 
 
-	it('should do nothing', () => {
+	it('should return the 2 films with "first" in the title when searching for "first"', () => {
 		// Act
-		console.log('sut: ', sut);
+		let expected = [];
+		let result = sut.search('first');
+
+		mockData.films.map(film => {
+			if ([1, 3].includes(film.id)) {
+				expected.push(film);
+			}
+		});
 
 		// Assert
-		expect(1).toEqual(1);
+		expect(result).toEqual(expected);
 	});
 });

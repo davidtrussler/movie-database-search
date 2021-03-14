@@ -9,6 +9,16 @@
       "id": 2,
       "title": "Second film",
       "year": 2020
+    },
+    {
+      "id": 3,
+      "title": "First movie",
+      "year": 2019
+    },
+    {
+      "id": 4,
+      "title": "Second movie",
+      "year": 2018
     }
   ]
 }

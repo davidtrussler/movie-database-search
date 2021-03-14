@@ -14,7 +14,11 @@ class Store {
   }
 
   search(value) {
-  	console.log('value: ', value); 
+		let searchedFilms = this.state.films.filter(film => 
+			film.title.toLowerCase().search(value.toLowerCase()) !== -1
+		);
+
+		return searchedFilms;
   }
 }
 
