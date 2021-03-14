@@ -1,0 +1,14 @@
+{
+  "films": [
+    {
+      "id": 1,
+      "title": "First film",
+      "year": 2021
+    },
+    {
+      "id": 2,
+      "title": "Second film",
+      "year": 2020
+    }
+  ]
+}
