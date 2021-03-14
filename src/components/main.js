@@ -2,7 +2,8 @@ const AppMain = {
 	props: ['pageTitle'], 
 	template: `
 		<main>
-			<p>Search results</p>
+			<ul data-results>
+			</ul>
 		</main>
 	`	
 }
