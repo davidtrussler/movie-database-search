@@ -1,3 +1,7 @@
+import Search from './search';
+
+const search = new Search();
+
 document.addEventListener('DOMContentLoaded', () => {
-	console.log('DOMContentLoaded!');
+	search.init(); 
 });
