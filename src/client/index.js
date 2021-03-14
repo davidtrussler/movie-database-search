@@ -1,4 +1,5 @@
 import Store from './Store';
+import './styles/main.scss';
 
 const store = new Store();
 const bindEvents = () => {
