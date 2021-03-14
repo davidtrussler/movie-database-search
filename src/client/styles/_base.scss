@@ -1,4 +1,21 @@
+$gutter: 2%;
+
 body {
 	font-family: Verdana, "Lucida Sans Unicode", "Lucida Sans", "Lucida Grande", sans-serif;
+	color: $colour-white;
 	background: $colour-background-primary; 
+}
+
+header, 
+main, 
+footer {
+	width: 100% - ($gutter * 2);
+	margin: 0 $gutter;
+}
+
+.visually-hidden {
+	position: absolute; 
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
 }

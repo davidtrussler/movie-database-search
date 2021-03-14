@@ -1,3 +1,30 @@
+$btn_size: 2rem;
+$btn_space: 0.5rem;
+
+header {
+	form[name="search"] {
+		position: relative;
+
+		input {
+			width: 100%;
+			position: relative; 
+			height: $btn_size + ($btn_space * 2);
+			background: $colour-background-primary; 
+			color: $colour-white;
+			border: solid 2px;
+			padding: 0 $btn_size + ($btn_space * 2) 0 $btn_space;
+		}
+
+		button {
+			width: $btn_size; 
+			height: $btn_size; 
+			position: absolute;
+			top: $btn_space;
+			right: $btn_space;
+		}
+	}
+}
+
 .header__title {
 	display: block;
 	height: 0;
