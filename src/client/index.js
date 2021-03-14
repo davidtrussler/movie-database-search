@@ -5,7 +5,7 @@ const bindEvents = () => {
 	document.querySelector('form').addEventListener('submit', e => {
 		let value = e.target.querySelector('input[name="search"]').value;
 		e.preventDefault();
-		store.search(value); 
+		store.renderFilms(value);
 	})
 }
 
