@@ -1,3 +1,7 @@
+import Store from './Store';
+
+const store = new Store();
+
 document.addEventListener('DOMContentLoaded', () => {
-	console.log('DOMContentLoaded!');
+	store.getFilms(); 
 });
