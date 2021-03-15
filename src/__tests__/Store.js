@@ -28,20 +28,3 @@ describe('search', () => {
 		expect(result).toEqual(expected);
 	});
 });
-
-// GIVEN I am on the search page
-// WHEN the search results are displayed
-// THEN I can see the results load, (showing x of x) to indicate the current paginated group being displayed
-// AND I can click arrows to navigate between the groups of results
-describe('pagination', () => {
-	let sut;
-	let result;
-
-	beforeEach(() => {
-		// Arrange
-		sut = new Store();
-		sut.state.films = mockData.films;
-	}); 
-
-	it()
-}); 
