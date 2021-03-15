@@ -1,0 +1,71 @@
+.results {
+	@include clearfix; 
+
+	width: 100% - ($gutter * 2);
+	margin: 1rem 0 0;
+	padding: 1rem $gutter; 
+	background: $colour-background-secondary;
+}
+
+.result {
+	float: left;
+	width: 100%;
+	margin: 0 0 1rem;
+
+	&:last-child {
+		margin-bottom: 0; 
+	}
+}
+
+.result__image {
+	display: block; 
+	background: gray; 
+	height: 0;
+	padding: 253 /169 * 100% 0 0;
+}
+
+.result__title, 
+.result__date {
+	margin: 0.5rem 0 0;
+}
+
+@media screen and (min-width: $mq-s) {
+	.result {
+		width: (100% - $gutter) / 2; 
+		margin-left: $gutter; 
+
+		&:nth-child(2n - 1) {
+			margin-left: 0;
+		}
+	}
+}
+
+@media screen and (min-width: $mq-m) {
+	.result {
+		width: (100% - ($gutter * 2)) / 3;
+		margin-left: $gutter;
+
+		&:nth-child(2n - 1) {
+			margin-left: $gutter;
+		}
+
+		&:nth-child(3n - 2) {
+			margin-left: 0; 
+		}
+	}
+}
+
+@media screen and (min-width: $mq-l) {
+	.result {
+		width: (100% - ($gutter * 3)) / 4;
+		margin-left: $gutter;
+
+		&:nth-child(3n - 2) {
+			margin-left: $gutter; 
+		}
+
+		&:nth-child(4n - 3) {
+			margin-left: 0;
+		}
+	}
+}

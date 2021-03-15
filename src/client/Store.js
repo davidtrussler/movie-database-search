@@ -21,12 +21,12 @@ class Store {
 
 		films.forEach(film => {
 			results.innerHTML += `
-				<li>
-					<span>image</span>
-					<p>${film.title}</p>
-					<p>${film.year}</p>
-					</li>
-				`;
+				<li class="result">
+					<span class="result__image"></span>
+					<p class="result__title">${film.title}</p>
+					<p class="result__date">${film.year}</p>
+				</li>
+			`;
 		})
 	}
 

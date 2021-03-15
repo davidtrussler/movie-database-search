@@ -4,10 +4,9 @@
 
 - Install dependencies with `npm install`
 - Start a json db with `npm run db`
+- Bundle CSS and JS files with `npm run watch` 
 - Start a dev server with `npm run dev`
 - Run tests with `npm run test`
-- Run `npm run watch` during development to bundle files on change
-
 
 ## Acceptance Criteria 
 

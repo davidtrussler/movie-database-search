@@ -1,7 +1,7 @@
 const AppFooter = {
 	template: `
 		<footer>
-			<p>David Trussler 2021</p>
+			<p class="footer__credit">David Trussler 2021</p>
 		</footer>
 	`
 }
