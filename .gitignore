@@ -1,4 +1,5 @@
 node_modules
+public/
+design.psd
 .DS_Store
 */.DS_Store
-public/
