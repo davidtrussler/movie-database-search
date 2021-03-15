@@ -29,7 +29,7 @@
 	margin: 0.5rem 0 0;
 }
 
-@media screen and (min-width: 350px) {
+@media screen and (min-width: $mq-s) {
 	.result {
 		width: (100% - $gutter) / 2; 
 		margin-left: $gutter; 
@@ -40,7 +40,7 @@
 	}
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: $mq-m) {
 	.result {
 		width: (100% - ($gutter * 2)) / 3;
 		margin-left: $gutter;
@@ -55,7 +55,7 @@
 	}
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: $mq-l) {
 	.result {
 		width: (100% - ($gutter * 3)) / 4;
 		margin-left: $gutter;

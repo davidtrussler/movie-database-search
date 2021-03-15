@@ -7,7 +7,6 @@ header {
 
 		input {
 			width: 100%;
-			position: relative; 
 			height: $btn_size + ($btn_space * 2);
 			background: $colour-background-primary; 
 			color: $colour-white;
@@ -21,14 +20,36 @@ header {
 			position: absolute;
 			top: $btn_space;
 			right: $btn_space;
+			overflow: hidden;
 		}
 	}
 }
 
 .header__title {
 	display: block;
-	height: 0;
-	padding: 34 / 200 * 100% 0 0;
+	height: 3rem; 
+	width: 100%;
+	max-width: 18.75rem; 
 	margin: 1rem 0;
 	background-color: gray; 
+}
+
+@media screen and (min-width: $mq-m) {
+	header {
+		@include clearfix; 
+	}
+
+	form[name="search"], 
+	.header__title {
+		width: (100% - $gutter) / 2; 
+	}
+
+	.header__title {
+		float: left;
+	}
+
+	form[name="search"] {
+		float: right; 
+		margin: 1rem 0; 
+	}
 }
