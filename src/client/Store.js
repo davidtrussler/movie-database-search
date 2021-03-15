@@ -1,7 +1,8 @@
 class Store {
 	constructor() {
 		this.state = {
-			films: []
+			films: [],
+			searchedFilms: []
 		}
 	}
 
@@ -34,6 +35,8 @@ class Store {
 		let searchedFilms = this.state.films.filter(film => 
 			film.title.toLowerCase().search(value.toLowerCase()) !== -1
 		);
+
+		this.state.searchedFilms = searchedFilms;
 
 		return searchedFilms;
   }
