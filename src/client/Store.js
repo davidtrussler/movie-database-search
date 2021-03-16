@@ -21,21 +21,23 @@ class Store {
 		let results = document.querySelector('[data-results]');
 		let pagination = new Pagination(this);
 
-		pagination.state.currentPage++; 
+		if (pagination.state.currentPage === 0) {
+			pagination.state.currentPage = 1;
+		}
 		pagination.renderResultsCount();
 		pagination.renderPageValues();
 
 		results.innerHTML = ``;
 
-		films.forEach(film => {
+		for(let i = 0; i < pagination.resultsPerPage; i++) {
 			results.innerHTML += `
 				<li class="result">
 					<span class="result__image"></span>
-					<p class="result__title">${film.title}</p>
-					<p class="result__date">${film.year}</p>
+					<p class="result__title">${films[i].title}</p>
+					<p class="result__date">${films[i].year}</p>
 				</li>
 			`;
-		})
+		}
 	}
 
   search(value) {
