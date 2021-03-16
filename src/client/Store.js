@@ -2,9 +2,11 @@ const Pagination = require('../client/Pagination');
 
 class Store {
 	constructor() {
+		this.pagination = new Pagination(this);
 		this.state = {
 			films: [],
-			searchedFilms: []
+			searchedFilms: [], 
+			currentPage: 1
 		}
 	}
 
@@ -17,19 +19,26 @@ class Store {
   }
 
 	renderFilms(value) {
-		let films = this.search(value);
-		let results = document.querySelector('[data-results]');
-		let pagination = new Pagination(this);
+		let 
+			films,
+			results = document.querySelector('[data-results]');
 
-		if (pagination.state.currentPage === 0) {
-			pagination.state.currentPage = 1;
+		if (value) {
+			films = this.search(value);
+		} else {
+			films = this.state.searchedFilms; 
 		}
-		pagination.renderResultsCount();
-		pagination.renderPageValues();
+
+		this.pagination.renderResultsCount();
+		this.pagination.renderPageValues();
 
 		results.innerHTML = ``;
 
-		for(let i = 0; i < pagination.resultsPerPage; i++) {
+		for (
+			let i = this.pagination.resultsPerPage * (this.state.currentPage - 1); 
+			i < this.pagination.resultsPerPage * this.state.currentPage; 
+			i++
+		) {
 			results.innerHTML += `
 				<li class="result">
 					<span class="result__image"></span>
