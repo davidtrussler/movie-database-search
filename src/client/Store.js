@@ -1,3 +1,5 @@
+const Pagination = require('../client/Pagination');
+
 class Store {
 	constructor() {
 		this.state = {
@@ -17,6 +19,11 @@ class Store {
 	renderFilms(value) {
 		let films = this.search(value);
 		let results = document.querySelector('[data-results]');
+		let pagination = new Pagination(this);
+
+		pagination.state.currentPage++; 
+		pagination.renderResultsCount();
+		pagination.renderPageValues();
 
 		results.innerHTML = ``;
 

@@ -1,4 +1,4 @@
-const Search = require('../client/Search');
+const Pagination = require('../client/Pagination');
 const Store = require('../client/Store');
 const mockData = require('../../db.json');
 
@@ -15,7 +15,7 @@ describe('pagination', () => {
 		store = new Store();
 		store.state.films = mockData.films;
 		store.state.searchedFilms = mockData.films.filter(data => searchedFilmsId.includes(data.id)); 
-		sut = new Search(store);
+		sut = new Pagination(store);
 	}); 
 
 	it('should display the correct values for the number of results', () => {
@@ -28,7 +28,13 @@ describe('pagination', () => {
 
 	it('should display the correct values for the current page and total pages', () => {
 		// Act
+		sut.resultsPerPage = 2; 
+		// store.renderFilms('Another');
+		result = sut.getPaginationValues();
+
 		// Assert
+		// expect(result.currentPage).toEqual(1);
+		expect(result.totalPages).toEqual(2); 
 	});
 
 	it('should show the correct films when the pagination controls are activated', () => {
