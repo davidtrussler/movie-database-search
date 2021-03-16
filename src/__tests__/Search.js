@@ -7,18 +7,23 @@ const mockData = require('../../db.json');
 // THEN I can see the results load, (showing x of x) to indicate the current paginated group being displayed
 // AND I can click arrows to navigate between the groups of results
 describe('pagination', () => {
-	let sut;
-	let result;
+	let sut, store, result;
+	let searchedFilmsId = [5, 6, 7, 8];
 
 	beforeEach(() => {
 		// Arrange
-		sut = new Store();
-		sut.state.films = mockData.films;
+		store = new Store();
+		store.state.films = mockData.films;
+		store.state.searchedFilms = mockData.films.filter(data => searchedFilmsId.includes(data.id)); 
+		sut = new Search(store);
 	}); 
 
 	it('should display the correct values for the number of results', () => {
 		// Act
+		result = sut.getPaginationValues();
+
 		// Assert
+		expect(result.searched).toEqual(4);
 	});
 
 	it('should display the correct values for the current page and total pages', () => {
