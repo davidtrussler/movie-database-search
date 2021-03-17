@@ -12,20 +12,24 @@ class Modal {
 
 		modal.innerHTML = `
 			<div class="modal__image"></div>
-			<div class="modal__content">
-				<h1>${film.title}</h1>
-				<date>${film.year}</date>
-				<ul>
+			<article class="modal__content">
+				<header>
+					<hgroup class="modal__title">
+						<h1>${film.title}</h1>
+						<date>${film.year}</date>
+					</hgroup>
+				</header>
+				<ul class="modal__credits">
 					<li>Director: ${film.director}</li>
 					<li>Cast: ${film.cast}</li>
 					<li>Genre: ${film.genre}</li>
 				</ul>
 				${film.plot}
-			</div>
-			<button>X</button>
+			</article>
+			<button class="modal_close">X</button>
 		`;
 
-		modal.className = 'active';
+		modal.className = modal.className + ' active';
 		overlay.className = 'active';
 	}
 }

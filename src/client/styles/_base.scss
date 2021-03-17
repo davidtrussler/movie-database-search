@@ -2,13 +2,14 @@ body {
 	font-family: Verdana, "Lucida Sans Unicode", "Lucida Sans", "Lucida Grande", sans-serif;
 	color: $colour-white;
 	background: $colour-background-primary; 
-}
 
-header, 
-main, 
-footer {
-	width: 100% - ($gutter * 2);
-	margin: 0 $gutter;
+	& > header, 
+	& > main, 
+	& > footer {
+		width: (100 - ($gutter * 2)) * 1%;
+		max-width: 1200px; 
+		margin: 0 auto;	
+	}
 }
 
 .visually-hidden {
@@ -16,4 +17,12 @@ footer {
 	clip: rect(0 0 0 0);
 	height: 1px;
 	width: 1px;
+}
+
+p, 
+li, 
+date {
+	font-size: 0.875rem;
+	margin: 0 0 1rem;
+	line-height: 1.4; 
 }
