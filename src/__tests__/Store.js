@@ -1,6 +1,9 @@
 const Store = require('../client/Store');
 const mockData = require('../../db.json');
 
+// GIVEN I am on the search page
+// WHEN I have entered a search term
+// THEN I can see a grid of movies, each showing the poster, title and year of release
 describe('search', () => {
 	let sut;
 
