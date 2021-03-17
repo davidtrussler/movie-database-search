@@ -5,7 +5,7 @@ import './styles/main.scss';
 
 const store = new Store();
 const pagination = new Pagination(store);
-const modal = new Modal(); 
+const modal = new Modal(store);
 
 const bindEvents = () => {
 	document.querySelector('form').addEventListener('submit', e => {
