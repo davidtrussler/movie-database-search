@@ -3,42 +3,74 @@
     {
       "id": 1,
       "title": "First film",
-      "year": 2021
+      "year": 2021,
+      "plot": "<p>Stuff happens.</p><p>Then more stuff happens.</p>",
+      "director": "Irvin Kershner",
+      "genre": "Action, Adventure, Fantasy, Sci-Fi",
+      "cast": "Mark Hamill, Harrison Ford, Carrie Fisher"
     },
     {
       "id": 2,
       "title": "Second film",
-      "year": 2020
+      "year": 2020, 
+      "plot": "<p>Stuff happens.</p><p>Then more stuff happens.</p>",
+      "director": "Irvin Kershner",
+      "genre": "Action, Adventure, Fantasy, Sci-Fi",
+      "cast": "Mark Hamill, Harrison Ford, Carrie Fisher"
     },
     {
       "id": 3,
       "title": "First movie",
-      "year": 2019
+      "year": 2019, 
+      "plot": "<p>Stuff happens.</p><p>Then more stuff happens.</p>",
+      "director": "Irvin Kershner",
+      "genre": "Action, Adventure, Fantasy, Sci-Fi",
+      "cast": "Mark Hamill, Harrison Ford, Carrie Fisher"
     },
     {
       "id": 4,
       "title": "Second movie",
-      "year": 2018
+      "year": 2018, 
+      "plot": "<p>Stuff happens.</p><p>Then more stuff happens.</p>",
+      "director": "Irvin Kershner",
+      "genre": "Action, Adventure, Fantasy, Sci-Fi",
+      "cast": "Mark Hamill, Harrison Ford, Carrie Fisher"
     }, 
     {
       "id": 5,
       "title": "Another one",
-      "year": 2017
+      "year": 2017, 
+      "plot": "<p>Stuff happens.</p><p>Then more stuff happens.</p>",
+      "director": "Irvin Kershner",
+      "genre": "Action, Adventure, Fantasy, Sci-Fi",
+      "cast": "Mark Hamill, Harrison Ford, Carrie Fisher"
     },
     {
       "id": 6,
-      "title": "Another one",
-      "year": 2016
+      "title": "Yet another one",
+      "year": 2016, 
+      "plot": "<p>Stuff happens.</p><p>Then more stuff happens.</p>",
+      "director": "Irvin Kershner",
+      "genre": "Action, Adventure, Fantasy, Sci-Fi",
+      "cast": "Mark Hamill, Harrison Ford, Carrie Fisher"
     },
     {
       "id": 7,
-      "title": "Another one",
-      "year": 2015
+      "title": "And another one",
+      "year": 2015, 
+      "plot": "<p>Stuff happens.</p><p>Then more stuff happens.</p>",
+      "director": "Irvin Kershner",
+      "genre": "Action, Adventure, Fantasy, Sci-Fi",
+      "cast": "Mark Hamill, Harrison Ford, Carrie Fisher"
     },
     {
       "id": 8,
-      "title": "Another one",
-      "year": 2014
+      "title": "What another?",
+      "year": 2014, 
+      "plot": "<p>Stuff happens.</p><p>Then more stuff happens.</p>",
+      "director": "Irvin Kershner",
+      "genre": "Action, Adventure, Fantasy, Sci-Fi",
+      "cast": "Mark Hamill, Harrison Ford, Carrie Fisher"
     }
   ]
 }
