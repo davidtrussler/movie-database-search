@@ -1,0 +1,139 @@
+$img-width: (100 - ($gutter * 3)) / 3;
+$close-btn-size: 26px;
+
+.results-modal {
+	position: fixed;
+	left: $gutter * 3%;
+	right: $gutter * 3%;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 0.5rem $gutter * 2%;
+	background: $colour-background-secondary;
+	z-index: 20;
+	display: none; 
+
+	&.active {
+		display: block; 
+	}
+}
+
+.modal__image {
+	width: 100%;
+	margin: calc(0.5rem + #{$close-btn-size}) 0 1rem; 
+	height: 0;
+	padding: $poster-aspect * 100% 0 0;
+	background: gray;
+}
+
+.modal__content {
+	box-sizing: border-box; 
+
+	p:last-child {
+		margin-bottom: 0; 
+	}
+}
+
+.modal__title {
+	margin: 0 0 1.5rem;
+
+	h1 {
+		display: inline-block;
+		font-size: 2rem
+	}
+
+	date {
+		&:before {
+			content: '('; 
+		}
+
+		&:after {
+			content: ')'; 
+		}
+	}
+}
+
+.modal__credits {
+	margin: 0 0 2rem;
+
+	li {
+		margin: 0 0 0.75rem;
+	}
+}
+
+.modal_close {
+	position: absolute;
+	top: 0.5rem; 
+	right: $gutter * 2 * 1%;
+	width: 26px;
+	height: 26px; 
+	color: $colour-white;
+	background: $colour-black;
+	border: none; 
+	border-radius: 50%; 
+	font-size: 1.25rem; 
+	line-height: 26px; 
+	text-align: center; 
+}
+
+.results-modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: $colour-black;
+	opacity: 65%;
+	z-index: 10; 
+	display: none; 
+
+	&.active {
+		display: block; 
+	}
+}
+
+@media screen and (min-width: $mq-s) {
+	.results-modal {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	.modal__image {
+		width: (100 - $gutter) * (3/4) * 1%;
+		margin-top: 0; 
+		padding-top: $poster-aspect * 75%;
+	}
+
+	.modal_close {
+		right: $gutter * 1%;
+	}
+}
+
+@media screen and (min-width: $mq-m) {
+	.results-modal {
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+	}
+
+	.modal__image {
+		width: $img-width * 1%;
+		padding-top: ($poster-aspect * 100) / (100 / $img-width) * 1%;
+		float: left;
+	}
+
+	.modal__content {
+		width: (200 - ($gutter * 3)) / 3 * 1%;
+		float: right; 
+		padding-right: $close-btn-size; 
+	}
+}
+
+@media screen and (min-width: $mq-l) {
+	.results-modal {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+
+	.modal_close {
+		right: $gutter / 2 * 1%;
+	}
+}
