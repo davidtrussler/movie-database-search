@@ -1,4 +1,5 @@
-$btn_size: 2rem;
+$btn_width: 2rem * (25 / 27);
+$btn_height: 2rem;
 $btn_space: 0.5rem;
 
 header {
@@ -7,31 +8,33 @@ header {
 
 		input {
 			width: 100%;
-			height: $btn_size + ($btn_space * 2);
+			height: $btn_height + ($btn_space * 2);
 			background: $colour-background-primary; 
 			color: $colour-white;
 			border: solid 2px;
-			padding: 0 $btn_size + ($btn_space * 2) 0 $btn_space;
+			padding: 0 $btn_width + ($btn_space * 2) 0 $btn_space;
 		}
 
 		button {
-			width: $btn_size; 
-			height: $btn_size; 
+			width: $btn_width; 
+			height: $btn_height; 
 			position: absolute;
 			top: $btn_space;
 			right: $btn_space;
 			overflow: hidden;
+			background: url('/assets/search.svg') transparent; 
+			border: none;
 		}
 	}
 }
 
 .header__title {
 	display: block;
-	height: 3rem; 
+	height: #{(48 / 16)}rem; 
 	width: 100%;
-	max-width: 18.75rem; 
+	max-width: #{(296 / 16)}rem;
 	margin: 1rem 0;
-	background-color: gray; 
+	background-image: url('/assets/logo.svg'); 
 }
 
 @media screen and (min-width: $mq-m) {
