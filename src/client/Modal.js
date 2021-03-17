@@ -30,7 +30,7 @@ class Modal {
 		`;
 
 		modal.className = modal.className + ' active';
-		overlay.className = 'active';
+		overlay.className = overlay.className + ' active';
 	}
 }
 
