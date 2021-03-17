@@ -9,6 +9,7 @@ class Modal {
 		let film = this.store.state.films.find(film => film.id == id); 
 		let modal = document.querySelector('[data-results-modal]'); 
 		let overlay = document.querySelector('[data-results-modal-overlay]');
+		let closeBtn; 
 
 		modal.innerHTML = `
 			<div class="modal__image"></div>
@@ -26,11 +27,25 @@ class Modal {
 				</ul>
 				${film.plot}
 			</article>
-			<button class="modal_close">X</button>
+			<button data-results-modal-close class="modal_close">X</button>
 		`;
 
 		modal.className = modal.className + ' active';
 		overlay.className = overlay.className + ' active';
+
+		closeBtn = document.querySelector('[data-results-modal-close]'); 
+
+		closeBtn.addEventListener('click', () => {
+			this.closeModal(); 
+		}); 
+	}
+
+	closeModal() {
+		let modal = document.querySelector('[data-results-modal]'); 
+		let overlay = document.querySelector('[data-results-modal-overlay]');
+
+		modal.className = modal.className.replace(' active', '');
+		overlay.className = overlay.className.replace(' active', '');
 	}
 }
 

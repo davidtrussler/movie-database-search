@@ -5,7 +5,7 @@ const AppMain = {
 				<p class="results-count"><span data-resultsCount>0</span> Results found</p>
 
 				<nav class="results-navigation">
-					<p class="navigation__page-count">Page <span data-currentPage>0</span> of <span data-totalPages>0</span>
+					<p class="navigation__page-count">Page <span data-currentPage>0</span> of <span data-totalPages>0</span></p>
 
 					<ul data-paginationControls class="navigation__page-controls">
 						<li class="navigation__page-control">
