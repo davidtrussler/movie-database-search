@@ -42,8 +42,8 @@ class Store {
 			results.innerHTML += `
 				<li class="result">
 					<span class="result__image"></span>
-					<p class="result__title">${films[i].title}</p>
-					<p class="result__date">${films[i].year}</p>
+					<h2 class="result__title">${films[i].title}</h2>
+					<date class="result__date">${films[i].year}</date>
 				</li>
 			`;
 		}

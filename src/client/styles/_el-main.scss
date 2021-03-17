@@ -1,10 +1,50 @@
+.results-container {
+	font-size: 0.875rem; 
+	padding: 1rem $gutter;
+	margin: 1rem 0 0;
+	background: $colour-background-secondary;
+}
+
+.results-navigation {
+	float: right; 
+	padding: 0 0 0 $gutter;
+}
+
+.navigation__page-count {
+	float: left;
+}
+
+.navigation__page-controls {
+	float: right; 
+}
+
+.navigation__page-control {
+	float: left; 
+	margin: 0 0 0 0.5rem; 
+
+	& > a {
+		display: block; 
+		width: 2.75rem;
+		height: 2.75rem;
+		background: gray; 
+	}
+}
+
+.results-count {
+	float: left; 
+}
+
+.results-count, 
+.results-navigation {
+	line-height: 2.75rem; 
+	margin: 0 0 1rem;
+}
+
+
 .results {
 	@include clearfix; 
 
-	width: 100% - ($gutter * 2);
-	margin: 1rem 0 0;
-	padding: 1rem $gutter; 
-	background: $colour-background-secondary;
+	clear: both;
 }
 
 .result {
