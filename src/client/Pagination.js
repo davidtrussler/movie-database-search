@@ -3,7 +3,7 @@ const Store = require('../client/Store');
 class Pagination {
 	constructor(store) {
 		this.store = store;
-		this.resultsPerPage = 2;
+		this.resultsPerPage = 4;
 	}
 
 	renderResultsCount() {
