@@ -71,6 +71,60 @@
       "director": "Irvin Kershner",
       "genre": "Action, Adventure, Fantasy, Sci-Fi",
       "cast": "Mark Hamill, Harrison Ford, Carrie Fisher"
+    }, 
+    {
+      "id": 9,
+      "title": "Third film",
+      "year": 2013,
+      "plot": "<p>Stuff happens.</p><p>Then more stuff happens.</p>",
+      "director": "Irvin Kershner",
+      "genre": "Action, Adventure, Fantasy, Sci-Fi",
+      "cast": "Mark Hamill, Harrison Ford, Carrie Fisher"
+    },
+    {
+      "id": 10,
+      "title": "Fourth film",
+      "year": 2012, 
+      "plot": "<p>Stuff happens.</p><p>Then more stuff happens.</p>",
+      "director": "Irvin Kershner",
+      "genre": "Action, Adventure, Fantasy, Sci-Fi",
+      "cast": "Mark Hamill, Harrison Ford, Carrie Fisher"
+    }, 
+    {
+      "id": 11,
+      "title": "Fifth film",
+      "year": 2011,
+      "plot": "<p>Stuff happens.</p><p>Then more stuff happens.</p>",
+      "director": "Irvin Kershner",
+      "genre": "Action, Adventure, Fantasy, Sci-Fi",
+      "cast": "Mark Hamill, Harrison Ford, Carrie Fisher"
+    },
+    {
+      "id": 12,
+      "title": "Sixth film",
+      "year": 2010, 
+      "plot": "<p>Stuff happens.</p><p>Then more stuff happens.</p>",
+      "director": "Irvin Kershner",
+      "genre": "Action, Adventure, Fantasy, Sci-Fi",
+      "cast": "Mark Hamill, Harrison Ford, Carrie Fisher"
+    }, 
+    {
+      "id": 13,
+      "title": "Seventh film",
+      "year": 2009,
+      "plot": "<p>Stuff happens.</p><p>Then more stuff happens.</p>",
+      "director": "Irvin Kershner",
+      "genre": "Action, Adventure, Fantasy, Sci-Fi",
+      "cast": "Mark Hamill, Harrison Ford, Carrie Fisher"
+    },
+    {
+      "id": 14,
+      "title": "Eighth film",
+      "year": 2008, 
+      "plot": "<p>Stuff happens.</p><p>Then more stuff happens.</p>",
+      "director": "Irvin Kershner",
+      "genre": "Action, Adventure, Fantasy, Sci-Fi",
+      "cast": "Mark Hamill, Harrison Ford, Carrie Fisher"
     }
   ]
 }
